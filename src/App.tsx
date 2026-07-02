@@ -1,11 +1,13 @@
-import zarbdar from "./assets/zarbdar.png"
-
+import LayOut from "./components/layOut";
+import Part1 from "./components/part1";
+import Part2 from "./components/part2";
 
 function App() {
   return (
-    <div className="min-h-screen bg-base-200 flex items-center justify-center">
-      <img src={zarbdar} alt="" />
-    </div>
+    <LayOut>
+      <Part1 />
+      <Part2 />
+    </LayOut>
   );
 }
 
