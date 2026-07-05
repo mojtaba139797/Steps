@@ -3,6 +3,8 @@ import arr2 from "../constants/arr2";
 import ButtunPrev from "./buttunPrev";
 import ButtunNext from "./buttunNext";
 import { useState } from "react";
+import TextArea from "./textArea";
+import advices2 from "../constants/advices2";
 
 interface Part2Prop {
   Part2Enable: boolean;
@@ -32,9 +34,9 @@ const Part2 = (prop: Part2Prop) => {
             ))}
           </div>
           {/* قسمت نمایش متن ها*/}
-          <div id="text-area" className="flex justify-center">
-            <p className="font-bold">hello</p>
-          </div>
+          {advices2.map((adv) => (
+            <TextArea id={adv.id} advice={adv.adv} step={step} />
+          ))}
           {/* دکمه های قبلی و بعدی */}
           <div id="buttun-container" className="flex justify-around">
             <ButtunPrev text="Previous" onClick={handlePrevStep} />
