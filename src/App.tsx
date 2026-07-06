@@ -2,6 +2,7 @@ import LayOut from "./components/layOut";
 import Part1 from "./components/part1";
 import Part2 from "./components/part2";
 import zarbdar from "./assets/zarbdar.png";
+import Menue from "./assets/Menu.png";
 import { useState } from "react";
 
 function App() {
@@ -19,21 +20,39 @@ function App() {
   };
   return (
     <>
-      <img
-        src="zarbdar"
-        alt="zarbdar"
-        className="w-4 h-4 mt-12 ml-12"
-        onClick={handlePart1Enable}
-      />
+      {Part1Enable ? (
+        <img
+          src={zarbdar}
+          alt="zarbdar"
+          className="w-4 h-4 mt-12 ml-12"
+          onClick={handlePart1Enable}
+        />
+      ) : (
+        <img
+          src={Menue}
+          alt="Menue"
+          className="w-7 h-7 mt-12 ml-12"
+          onClick={handlePart1Enable}
+        />
+      )}
       <LayOut>
         <Part1 Part1Enable={Part1Enable} />
       </LayOut>
-      <img
-        src="zarbdar"
-        alt="zarbdar"
-        className="w-4 h-4 mt-12 ml-12"
-        onClick={handlePart2Enable}
-      />
+      {Part2Enable ? (
+        <img
+          src={zarbdar}
+          alt="zarbdar"
+          className="w-4 h-4 mt-12 ml-12"
+          onClick={handlePart2Enable}
+        />
+      ) : (
+        <img
+          src={Menue}
+          alt="Menue"
+          className="w-7 h-7 mt-12 ml-12"
+          onClick={handlePart2Enable}
+        />
+      )}
       <LayOut>
         <Part2 Part2Enable={Part2Enable} />
       </LayOut>

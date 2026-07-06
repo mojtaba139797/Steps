@@ -26,11 +26,11 @@ const Part2 = (prop: Part2Prop) => {
   return (
     <>
       {Part2Enable ? (
-        <div className="w-204 h-80 bg-gray-200 rounded-2xl flex flex-col justify-around">
+        <div className="w-80 h-50 md:w-110 md:h-50 lg:w-204 lg:h-80 px-4 pt-2 bg-gray-200 rounded-2xl flex flex-col justify-around">
           {/* کامپوننت استپ ها */}
           <div id="numStep-container" className="flex justify-center gap-2">
             {arr2.map((a) => (
-              <NumStep content={a} step={step} />
+              <NumStep content={a} step={step} onStepChange={setStep} />
             ))}
           </div>
           {/* قسمت نمایش متن ها*/}
