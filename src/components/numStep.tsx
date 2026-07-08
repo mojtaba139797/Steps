@@ -25,10 +25,10 @@ const NumStep = (prop: NumStepProp) => {
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
       onClick={handleClick}
-      className={`w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 cursor-pointer rounded-full ${content === step ? "bg-purple-400 text-white" : "bg-gray-300"} ${content < step ? "bg-purple-400 text-white" : "bg-gray-300"} ${hover ? "bg-purple-400" : "bg-gray-300"} flex justify-center items-center`}
+      className={`w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 cursor-pointer rounded-full ${content === step ? "bg-purple-400 dark:bg-purple-600 text-white" : "bg-gray-300 dark:bg-gray-700"} ${content < step ? "bg-purple-400 dark:bg-purple-600 text-white" : "bg-gray-300 dark:bg-gray-700"} ${hover ? "bg-purple-400 dark:bg-purple-600" : "bg-gray-300 dark:bg-gray-700"} flex justify-center items-center`}
     >
       <span
-        className={`${content <= step ? "text-white" : "text-black"} ${hover ? "text-white" : "text-black"}`}
+        className={`${content <= step ? "text-white" : "text-black dark:text-zinc-100"} ${hover ? "text-white" : "text-black dark:text-zinc-100"}`}
       >
         {content}
       </span>

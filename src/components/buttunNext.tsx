@@ -8,7 +8,7 @@ const ButtunNext = (prop: ButtunProp) => {
   return (
     <button
       onClick={onClick}
-      className="w-16 h-8 md:w-20 md:h-10 lg:w-24 lg:h-14 font-normal text-sm md:text-lg lg:text-xl cursor-pointer bg-purple-500 text-white rounded-4xl"
+      className="w-16 h-8 md:w-20 md:h-10 lg:w-24 lg:h-14 font-normal text-sm md:text-lg lg:text-xl cursor-pointer bg-purple-500 dark:bg-violet-600 text-white dark:text-zinc-100 rounded-4xl"
     >
       {text}
     </button>

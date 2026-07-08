@@ -11,7 +11,7 @@ const TextArea = (prop: TextAreaProp) => {
       id="text-area"
       className={`flex justify-center ${step !== id ? "hidden" : "flex justify-center"}`}
     >
-      <p className="font-normal text-sm md:text-lg lg:text-xl">{advice}</p>
+      <p className="font-normal text-sm md:text-lg lg:text-xl dark:text-zinc-100">{advice}</p>
     </div>
   );
 };
