@@ -27,7 +27,7 @@ const Part1 = (prop: Part1Prop) => {
   return (
     <>
       {Part1Enable ? (
-        <div className="w-80 h-50 md:w-110 md:h-50 lg:w-204 lg:h-80 px-4 pt-2 bg-gray-200 rounded-2xl flex flex-col justify-around">
+        <div className="w-80 h-50 md:w-110 md:h-50 lg:w-204 lg:h-80 px-4 pt-2 bg-gray-200 dark:bg-zinc-800 rounded-2xl flex flex-col justify-around">
           {/* کامپوننت استپ ها */}
           <div id="numStep-container" className="flex justify-around">
             {arr1.map((a) => (
